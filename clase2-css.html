@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 2 - CSS Ejemplo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Clase 2 - CSS Básico</h1>
+        <p class="subtitle">Selectores, etiquetas, clases e ids</p>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#selectores">Selectores</a></li>
+                <li><a href="#boxmodel">Box Model</a></li>
+                <li><a href="#tipografia">Tipografía</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="selectores">
+            <h2>Selectores</h2>
+            <p class="nota">Esta nota usa la clase nota</p>
+            <p class="nota" id="destacado">Este parrafo tiene un id destacado</p>
+        </section>
+
+        <!-- 🔽 DEMO EXTRA -->
+        <section id="demo">
+            <h2>Demo de selectores no usados</h2>
+
+            <!-- 1. data-role -->
+            <p data-role="demo">
+                (Selector: <code>p[data-role="demo"]</code>)  
+                Este párrafo tiene el atributo <strong>data-role="demo"</strong> y debería verse en cursiva y color secundario.
+            </p>
+
+            <!-- 2. lista-selectores + li.importante -->
+            <ul class="lista-selectores">
+                <li>(Normal) Elemento de lista común, sin clase especial.</li>
+                <li class="importante">
+                    (Selector: <code>.lista-selectores &gt; li.importante</code>)  
+                    Este elemento es <strong>importante</strong> y debería tener un fondo diferente y esquinas redondeadas.
+                </li>
+            </ul>
+
+            <!-- 3. enlace-demo -->
+            <p>
+                (Selector: <code>.enlace-demo:hover</code>)  
+                Visita este <a href="#" class="enlace-demo">enlace demo</a> y pasa el mouse por encima: el color debe cambiar a verde.
+            </p>
+
+            <!-- 4. caps -->
+            <p class="caps">
+                (Selector: <code>.caps::before / .caps::after</code>)  
+                Este texto debería aparecer rodeado por símbolos rojos <code>&gt;&gt;</code> y <code>&lt;&lt;</code>.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
