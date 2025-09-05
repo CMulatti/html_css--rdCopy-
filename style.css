@@ -88,3 +88,36 @@ p[data-role="demo"]
 
 .caps::before{ content: ">>"; color: var(--c-alerta);}
 .caps::after{content: "<<"; color: var(--c-alerta);}
+
+/* Only styles for #special-section */
+#special-section {
+  background-color: #f0f8ff; /* light blue */
+  padding: 20px;
+  border: 2px solid #1e90ff; /* blue border */
+  border-radius: 10px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+#special-section h2 {
+  color: #1e90ff;
+}
+
+#special-section p {
+  font-style: italic;
+  color: #333;
+}
+
+#special-section button {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#special-section button:hover {
+  background-color: #104e8b; /* darker blue on hover */
+}
+
