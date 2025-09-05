@@ -7,8 +7,8 @@ html, body
 {
     --c-fondo: #0f172a; /* color de fondo */
     --c-texto: #f2f4f7;
-    --c-secundario: #f416ec;
-    --c-primario: #ceff0a;
+    --c-secundario: #ff9d00;
+    --c-primario: #d7f369;
     --c-alerta: red;
     --ff-base: system-ui, Arial, sans-serif;
     --fz-base: 16px;
